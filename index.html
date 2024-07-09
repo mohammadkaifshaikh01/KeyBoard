@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>victusboard</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-size: small;
+    background-color: #ffffff;
+}
+
+.keyboard {
+    display: inline-block;
+    background-color: #686544;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(73, 60, 60, 0.1);
+    display: grid;
+    grid-gap: 3px; 
+    font-size: small;
+
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr); 
+    font-size: small;
+}
+
+.victus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2E3538;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    font-size: small;
+    color: #c09259;
+    cursor: pointer;
+    user-select: none;
+    height: 40px; 
+    text-align: center; 
+    margin: 1px;
+}
+
+.victus.wide {
+    grid-column: span 1; 
+}
+
+.victus.extra-wide {
+    grid-column: span 5; 
+}
+
+.enter{
+    grid-column: span 2;
+}
+
+.right-shift{
+    grid-column: span 3;
+}
+
+
+    </style>
+
+</head>
+<body>
+    <div class="keyboard">
+        <div class="row">
+            <div class="victus">~</div>
+            <div class="victus">1</div>
+            <div class="victus">2</div>
+            <div class="victus">3</div>
+            <div class="victus">4</div>
+            <div class="victus">5</div>
+            <div class="victus">6</div>
+            <div class="victus">7</div>
+            <div class="victus">8</div>
+            <div class="victus">9</div>
+            <div class="victus">0</div>
+            <div class="victus">-</div>
+            <div class="victus">+</div>
+            <div class="victus wide">Backspace</div>
+        </div>
+        <div class="row">
+            <div class="victus wide">Tab</div>
+            <div class="victus">Q</div>
+            <div class="victus">W</div>
+            <div class="victus">E</div>
+            <div class="victus">R</div>
+            <div class="victus">T</div>
+            <div class="victus">Y</div>
+            <div class="victus">U</div>
+            <div class="victus">I</div>
+            <div class="victus">O</div>
+            <div class="victus">P</div>
+            <div class="victus">{</div>
+            <div class="victus">}</div>
+            <div class="victus">\</div>
+        </div>
+        <div class="row">
+            <div class="victus wide">CapsLk</div>
+            <div class="victus">A</div>
+            <div class="victus">S</div>
+            <div class="victus">D</div>
+            <div class="victus">F</div>
+            <div class="victus">G</div>
+            <div class="victus">H</div>
+            <div class="victus">J</div>
+            <div class="victus">K</div>
+            <div class="victus">L</div>
+            <div class="victus">;</div>
+            <div class="victus">"</div>
+            <div class="victus enter">Enter</div>
+        </div>
+        <div class="row">
+            <div class="victus wide">Shift</div>
+            <div class="victus">Z</div>
+            <div class="victus">X</div>
+            <div class="victus">C</div>
+            <div class="victus">V</div>
+            <div class="victus">B</div>
+            <div class="victus">N</div>
+            <div class="victus">M</div>
+            <div class="victus"><</div>
+            <div class="victus">></div>
+            <div class="victus">/</div>
+            <div class="victus right-shift">Shift</div>
+        </div>
+        <div class="row">
+            <div class="victus wide">Ctrl</div>
+            <div class="victus">Fn</div>
+            <div class="victus"><i class="fa-brands fa-windows"></i></div>
+            <div class="victus">Alt</div>
+            <div class="victus extra-wide">Space</div>
+            <div class="victus">Alt</div>
+            <div class="victus">Ctrl</div>
+            <div class="victus"><i class="fa-solid fa-caret-left"></i></div>
+            <div class="victus" style="flex-direction: column;"><i class="fa-solid fa-caret-up"></i><i class="fa-solid fa-caret-down"></i></div>
+            <div class="victus"><i class="fa-solid fa-caret-right"></i></div>
+        </div>
+    </div>
+</body>
+</html>
